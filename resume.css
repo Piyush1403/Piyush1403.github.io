@@ -4,17 +4,20 @@
 	color: #333;
 }
 
-#section1{
-	padding-top: 90px;
-	padding-bottom: 90px;
+#Home{
+	padding-top: 110px;
+	padding-bottom: 170px;
 }
 
-#section2, #section3{
-	padding-top: 80px;
-	padding-bottom: 80px;
+#About{
+	padding-top: 210px;
+	padding-bottom: 210px;
 }
-
-#section4{
+#Skills{
+	padding-top: 180px;
+	padding-bottom: 200px;
+}
+#Contact{
 	padding-top: 50px;
 	
 }
@@ -71,16 +74,7 @@
     color: #fff !important;
 }
 
-.icon-bar{
-	background-color: #fff;
-}
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .github, .twitter, .linkedin{
-        padding: 15px 0px 5px 0px;
-    }
-}
 .margin {margin-bottom: 45px;}
 
 .progress {
@@ -119,7 +113,9 @@ body{
 	padding-top: 50px;
 
 }
-
+.pad{
+	padding-top: 50px;
+}
 .up-arrow{
 	color: #ffffff;
 	background-color: black;
@@ -133,6 +129,16 @@ body{
 	border: 1px white solid;
 }
 
+.icon-bar{
+	background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .github, .twitter, .linkedin{
+        padding: 15px 0px 5px 0px;
+    }
+}
 .slideanim {visibility:hidden;}
 .slide {
     /* The name of the animation */

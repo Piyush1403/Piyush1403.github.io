@@ -71,7 +71,16 @@
     color: #fff !important;
 }
 
+.icon-bar{
+	background-color: #fff;
+}
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .github, .twitter, .linkedin{
+        padding: 15px 0px 5px 0px;
+    }
+}
 .margin {margin-bottom: 45px;}
 
 .progress {

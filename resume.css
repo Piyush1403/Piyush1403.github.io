@@ -1,0 +1,159 @@
+
+.bg-1{
+	background-color: #ECFFE9;
+	color: #333;
+}
+
+#section1{
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+#section2, #section3{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#section4{
+	padding-top: 50px;
+	
+}
+
+.pp{
+	display: inline-block;
+	
+}
+
+.pp{
+	box-shadow: 0px 1px 10px #101010;
+}
+.bg-2{
+	background-color: #474e5d;
+	
+}
+
+.bg-3{
+	background-color: #ddd;
+	color: #333;
+}
+
+.bg-4{
+	color: #fff;
+	background-color: #161514;
+}
+.navbar {
+    margin-bottom: 0;
+    color: #101010;
+    z-index: 9999;
+    border: 0;
+    
+    background-color: #1a1a1a;
+    letter-spacing: 2.5px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff;
+
+}
+
+.navbar-brand{
+	font-size: 20px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1a1a1a;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+.margin {margin-bottom: 45px;}
+
+.progress {
+  height: 35px;
+  box-shadow: 1px 1px 10px #333;
+
+}
+body{
+	position: relative;
+	line-height: 25px;
+	letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+	color: #f5f6f7;
+}
+.progress .skill {
+  
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.progress .skill .val {
+  float: right;
+  
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+  background-color: #333;
+}
+
+
+.col-sm-12{
+	padding-top: 50px;
+
+}
+
+.up-arrow{
+	color: #ffffff;
+	background-color: black;
+	border: 1px black solid;
+	border-radius: 60%;
+	padding: 3px 3px 3px 4px;
+}
+.up-arrow:hover{
+	color: black;
+	background-color: white;
+	border: 1px white solid;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

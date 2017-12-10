@@ -1,48 +1,84 @@
 
+body{
+  position: relative;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  color: #f5f6f7;
+  font-size: 1.4em;
+}
+
+.wrap .bg-1 {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #ffc34d;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .bg-1{
-	background-color: #ECFFE9;
-	color: #333;
+  /*background-color: #ECFFE9;*/
+  color: #ffffe6;
+  background: url("img6.png") no-repeat ;
+  background-size: 100% 30%;
+
 }
 
 #Home{
-	padding-top: 110px;
-	padding-bottom: 170px;
+  padding-top: 110px;
+  padding-bottom: 170px;
 }
 
 #About{
-	padding-top: 210px;
-	padding-bottom: 210px;
+  padding-top: 210px;
+  padding-bottom: 210px;
 }
 #Skills{
-	padding-top: 180px;
-	padding-bottom: 200px;
+  padding-top: 70px;
+  padding-bottom: 180px;
+}
+
+#Projects{
+  padding-top: 170px;
+  padding-bottom: 210px;
 }
 #Contact{
-	padding-top: 50px;
-	
+  padding-top: 50px;
+  
 }
-
 .pp{
-	display: inline-block;
-	
+  display: inline-block;
+  
 }
-
 .pp{
-	box-shadow: 0px 1px 10px #101010;
+  box-shadow: 0px 1px 10px #101010;
+}
+.bg-new{
+  background-color: hsl(60, 100%, 90%);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #1a1a1a;
 }
 .bg-2{
-	background-color: #474e5d;
-	
+  background-color: hsl(60, 100%, 90%);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #1a1a1a;
 }
-
 .bg-3{
-	background-color: #ddd;
-	color: #333;
+  background-color: #ffc34d;
+  color: #1a1a1a;
+  
 }
-
 .bg-4{
-	color: #fff;
-	background-color: #161514;
+  color: #fff;
+  background-color: #161514;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
 }
 .navbar {
     margin-bottom: 0;
@@ -61,7 +97,7 @@
 }
 
 .navbar-brand{
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -82,13 +118,7 @@
   box-shadow: 1px 1px 10px #333;
 
 }
-body{
-	position: relative;
-	line-height: 25px;
-	letter-spacing: 1px;
-	font-family: 'Open Sans', sans-serif;
-	color: #f5f6f7;
-}
+
 .progress .skill {
   
   line-height: 35px;
@@ -110,27 +140,28 @@ body{
 
 
 .col-sm-12{
-	padding-top: 50px;
+  padding-top: 50px;
 
 }
 .pad{
-	padding-top: 50px;
+  padding-top: 50px;
+
 }
 .up-arrow{
-	color: #ffffff;
-	background-color: black;
-	border: 1px black solid;
-	border-radius: 60%;
-	padding: 3px 3px 3px 4px;
+  color: #ffffff;
+  background-color: black;
+  border: 1px black solid;
+  border-radius: 60%;
+  padding: 3px 3px 3px 4px;
 }
 .up-arrow:hover{
-	color: black;
-	background-color: white;
-	border: 1px white solid;
+  color: black;
+  background-color: white;
+  border: 1px white solid;
 }
 
 .icon-bar{
-	background-color: #fff;
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {

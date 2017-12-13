@@ -47,11 +47,18 @@
 </nav>
 
 <!--Home page-->
-  <div class="container-fluid text-center wrap " id="Home">
+
+  <div class="container-fluid text-center wrap  " id="Home">
     <div class="bg-1"></div>
     <h2 class="margin" style="font-size: 31px">Piyush Agrawal</h2>
     <img class="img-circle pp img-responsive" src="pp.jpg" alt="Profile Picture" style="display: inline;" height="325" width="320">
+    <!--Add scroll down option here-->
+    
+
   </div>
+  <section>
+    <a href="#About" class="scroll-down" address="true"></a>
+    </section>
 
 <!--About page-->
   <div class="container-fluid text-center bg-2" id="About">
@@ -227,13 +234,23 @@ $(window).on('mousemove click', function(e) {
 });
 
 moveBackground();
-//end
+//end of moving background script
 
 
+
+
+//Some code I don't remember what it did :/
   $('.nav a').on('click', function(){
     $('.btn-navbar').click(); //bootstrap 2.x
     $('.navbar-toggle').click() //bootstrap 3.x by Richard
 });
+
+
+
+
+
+//Progress bar filling
+
    $(document).ready(function() {
       $('.progress .progress-bar').css("width",
                 function() {
@@ -243,6 +260,8 @@ moveBackground();
     });
 
 
+
+//Smooth scrolling function
    $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, a[href='#Home']").on('click', function(event) {
@@ -280,6 +299,16 @@ moveBackground();
   });
 });
 
+// SCROLL DOWN CODE
+
+ $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('div.bg-2').offset().top }, 'slow');
+      return false;
+    });
+  });
+
 </script>
 </body>
 </html>
+

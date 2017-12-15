@@ -6,20 +6,55 @@
   <meta charset="utf-8">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <meta name="description" content="Piyush Agrawal is a developer from India.">
+
+  <meta name="author" content="Piyush Agrawal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Resume, Piyush Agrawal, Piyush-Agrawal-1403,Piyush-1403, HTML5, CSS3, Bootstrap, VIT, Vellore Institute of Technology">
+  <meta propert="og:type" content="website">
+  <meta property="og:site_name" content="Piyush Agrawal">
+  <meta property="og:url" content="piyush1403.github.io">
+  <meta property="og:title" content="Piyush Agrawal">
+  <meta property="og:description" content="Piyush Agrawal is a developer from India.">
+  <meta itemprop="name" content="Piyush Agrawal" />
+  <meta itemprop="description" content="Piyush Agrawal is a developer from India." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@jazbati_pathar" />
+  <meta name="twitter:title" content="Piyush Agrawal" />
+  <meta name="twitter:description" content="Piyush Agrawal is a developer from India." />
+  
+
+  <!-- Latest compiled and minified CSS -->
+
     <meta name="author" content="Piyush Agrawal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="resume, Piyush Agrawal, piyush-agrawal-1403, HTML5, CSS3, Bootstrap, VIT, Vellore Institute of Technology">
     <!-- Latest compiled and minified CSS -->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="resume.css" type="text/css">
+
+
 </head>
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50"  >
+
+<!--Page loader onload="myFunction()"
+<div id="loader"></div>
+<div class="animate-bottom" id="myDiv">
+-->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+<div id="content">
 
 <!--Navigation Bar-->
 <nav class="navbar navbar-fixed-top">
@@ -46,14 +81,19 @@
   </div>
 </nav>
 
+
+
+
 <!--Home page-->
 
-  <div class="container-fluid text-center wrap  " id="Home">
+  <div class="container-fluid text-center wrap" id="Home">
     <div class="bg-1"></div>
     <h2 class="margin" style="font-size: 31px">Piyush Agrawal</h2>
     <img class="img-circle pp img-responsive" src="pp.jpg" alt="Profile Picture" style="display: inline;" height="325" width="320">
+
+
+
     <!--Add scroll down option here-->
-    
 
   </div>
   <section>
@@ -171,7 +211,8 @@
       <div class="row slideanim pad">
         <div class="col-sm-3">
         </div>
-        <div class="col-sm-2">
+
+        <div class="col-sm-2 linkedin">
             
             <a href="https://www.linkedin.com/in/piyush-agrawal-1403/" title="LinkedIn" target="_blank"><img src="linkedin.png" class="img-circle img-responsive" alt="LinkedIn handle" style="display: inline;" height="90" width="90"></a>
         </div>
@@ -200,7 +241,17 @@
       </div>
 </div>
 
+</div>
 <script type="text/javascript">
+  $(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        
+    }, 1400);
+ 
+});
+
 
 //Moving background script start
 var lFollowX = 0,
@@ -307,6 +358,20 @@ moveBackground();
       return false;
     });
   });
+
+
+/*Old loader code
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1200);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+*/
 
 </script>
 </body>

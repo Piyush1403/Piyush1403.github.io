@@ -1,0 +1,497 @@
+
+body{
+  position: relative;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  color: #f5f6f7;
+  font-size: 1.4em;
+}
+
+.wrap .bg-1 {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.bg-1{
+  /*background-color: #ECFFE9;*/
+  color: #ffffe6;
+  background: url("https://i.imgur.com/9Ae6zVC.jpg") no-repeat ;
+  background-size: 100% 30%;
+
+}
+
+#Home{
+  padding-top: 110px;
+  padding-bottom: 200px;
+}
+
+#About{
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+#Skills{
+  padding-top: 70px;
+  padding-bottom: 180px;
+}
+
+#Projects{
+  padding-top: 170px;
+  padding-bottom: 210px;
+}
+#Contact{
+  padding-top: 50px;
+  
+}
+.pp{
+  display: inline-block;
+  
+}
+.pp{
+  box-shadow: 0px 1px 10px #101010;
+}
+.bg-new{
+  background-color: hsl(60, 100%, 90%);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #1a1a1a;
+}
+.bg-2{
+  background-color: hsl(60, 100%, 90%);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #1a1a1a;
+}
+.bg-3{
+  background-color: #ffc34d;
+  color: #1a1a1a;
+  
+}
+.bg-4{
+  color: #fff;
+  background-color: #161514;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+.navbar {
+    margin-bottom: 0;
+    color: #101010;
+    z-index: 9999;
+    border: 0;
+    
+    background-color: #1a1a1a;
+    letter-spacing: 2.5px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff;
+
+}
+
+.navbar-brand{
+  font-size: 20px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1a1a1a;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+.margin {margin-bottom: 45px;}
+
+.progress {
+  height: 35px;
+  box-shadow: 1px 1px 10px #333;
+
+}
+
+.progress .skill {
+  
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.progress .skill .val {
+  float: right;
+  
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+  background-color: #333;
+}
+
+
+.col-sm-12{
+  padding-top: 50px;
+
+}
+.pad{
+  padding-top: 50px;
+
+}
+.up-arrow{
+  color: #ffffff;
+  background-color: black;
+  border: 1px black solid;
+  border-radius: 60%;
+  padding: 3px 3px 3px 4px;
+}
+.up-arrow:hover{
+  color: black;
+  background-color: white;
+  border: 1px white solid;
+}
+
+.icon-bar{
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .github:hover, .twitter:hover, .linkedin:hover{
+        padding: 15px 0px 5px 0px;
+        transform: scale(1.1, 1.1);
+        transition: all 80ms ease-out;
+
+    }
+}
+.github:hover, .twitter:hover, .linkedin:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 80ms ease-out;
+    z-index: 10;
+    }
+
+
+
+    .github, .twitter, .linkedin{
+        padding: 15px 0px 5px 0px;
+    }
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+
+/*SCROLL DOWN OPTION*/
+
+
+
+
+
+
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #1f1f1f;
+  background-color: #1f1f1f;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid #f5f5f5;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce{
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+
+
+/* OLD LOADER CODE
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: 20% 0 0 -75px;
+  border: 16px solid #ffc34d;
+  border-radius: 50%;
+  border-top: 16px solid #990000;
+  border-bottom: 16px solid #990000;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+*/
+
+
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #1a1aff;
+    z-index: 1001;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color:#ffc34d ;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color:  #990000;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #1a1a1a;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.1s ease-out; 
+            transition: all 0.1s ease-out;
+}
+
+.no-js #loader-wrapper {
+    display: none;
+}
+.no-js h1 {
+    color: #1a1a1a;
+}
+
+/*
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+ 
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+*/
+.loaded #loader-wrapper {
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 1s ease-out; 
+                transition: all 0.3s 1s ease-out;
+}
+
+
